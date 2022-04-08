@@ -1,6 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using WebApplication1.Controllers;
+using WebApplication1.Imp;
+using WebApplication1.Interface;
 using WebApplication1.Models;
 
 namespace Startup
@@ -15,14 +19,15 @@ namespace Startup
         public void ConfigureServices(IServiceCollection services)
         {
             string mySqlConnectionStr = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContextPool<MyDBContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
+            services.AddDbContext<ProdutoDBContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
 
-            services.AddControllers();
+            services.AddScoped<IProdutoInterface, ProdutoRepo>();
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
