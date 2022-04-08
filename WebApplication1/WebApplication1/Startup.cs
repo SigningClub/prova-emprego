@@ -21,7 +21,7 @@ namespace Startup
             string mySqlConnectionStr = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ProdutoDBContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
 
-            services.AddScoped<IProdutoInterface, ProdutoRepo>();
+            services.AddSingleton<IProdutoInterface, ProdutoRepo>();
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
