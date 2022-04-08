@@ -1,9 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Controllers;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Net;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -17,8 +22,12 @@ namespace WebApplication1.Controllers
         {
             _logger = logger;
         }
+        /// <summary>
+        /// <
+        /// </summary>
+        /// <returns></returns>
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet(Name = "{id}")]
         public IEnumerable<WeatherForecast> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -29,5 +38,8 @@ namespace WebApplication1.Controllers
             })
             .ToArray();
         }
+
+
     }
-}
+
+}    
