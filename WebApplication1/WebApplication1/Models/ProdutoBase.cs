@@ -10,6 +10,7 @@ namespace WebApplication1.Models
         [Required(AllowEmptyStrings =false, ErrorMessage ="Informe o valor")]
         public float Price { get; set; }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Informe a quantidade")]
+        
         public int qtd { get; set; }
     }
 }

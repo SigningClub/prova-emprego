@@ -131,3 +131,9 @@ C:\Users\gabri\Documents\C#\Prova Emprego\prova-emprego\WebApplication1\WebAppli
 C:\Users\gabri\Documents\C#\Prova Emprego\prova-emprego\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.pdb
 C:\Users\gabri\Documents\C#\Prova Emprego\prova-emprego\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.genruntimeconfig.cache
 C:\Users\gabri\Documents\C#\Prova Emprego\prova-emprego\WebApplication1\WebApplication1\obj\Debug\net6.0\ref\WebApplication1.dll
+C:\Users\gabri\Documents\C#\Prova Emprego\prova-emprego\WebApplication1\WebApplication1\bin\Debug\net6.0\Microsoft.Build.Framework.dll
+C:\Users\gabri\Documents\C#\Prova Emprego\prova-emprego\WebApplication1\WebApplication1\bin\Debug\net6.0\Microsoft.Build.Tasks.Core.dll
+C:\Users\gabri\Documents\C#\Prova Emprego\prova-emprego\WebApplication1\WebApplication1\bin\Debug\net6.0\Microsoft.Build.Utilities.Core.dll
+C:\Users\gabri\Documents\C#\Prova Emprego\prova-emprego\WebApplication1\WebApplication1\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
+C:\Users\gabri\Documents\C#\Prova Emprego\prova-emprego\WebApplication1\WebApplication1\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\gabri\Documents\C#\Prova Emprego\prova-emprego\WebApplication1\WebApplication1\bin\Debug\net6.0\System.Resources.Extensions.dll
